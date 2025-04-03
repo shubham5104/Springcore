@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:p="http://www.springframework.org/schema/p" 
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <bean class="com.springcore.collections.Emp" name="Emp1">
+  	<property name="name" value="Shubham"/>
+  	
+  	<property name="phones">
+  		<list>
+  			<value>8746573895</value>
+  			<value>9878909890</value>
+  			<value>9834234332</value>
+  		</list>
+  	</property>
+  	<property name="address">
+  		<set>
+  			<value>Jalna</value>
+  			<value>Pune</value>
+  		</set>
+  	</property>
+  	<property name="courses">
+  		<map>
+  			<entry key="java" value="3 months"/>
+  			<entry key="Python" value="3 months"/>
+  		</map>
+  	</property>
+  	
+  	<property name="prop">
+  		<props>
+  			<prop key="url">jdbc:mysql://localhost:3306/demo</prop>
+            <prop key="username">root</prop>
+            <prop key="password">shubham</prop>
+            <prop key="hello">hello</prop>
+  		</props>
+  	</property>
+  
+  </bean>
+  
+  
+  
+  </beans>
