@@ -14,7 +14,8 @@
   	
   </bean>
   
-  <bean class="com.springcore.auto.wired.Emp" name="emp1" autowire="byName"/>
+  
+  <bean class="com.springcore.auto.wired.Emp" name="emp1" autowire="constructor"/>
   
   
   </beans>

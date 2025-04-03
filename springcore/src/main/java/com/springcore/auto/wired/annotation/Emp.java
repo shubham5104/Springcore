@@ -1,8 +1,10 @@
-package com.springcore.auto.wired;
+package com.springcore.auto.wired.annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Emp {
 	
-	private String name;
+	@Autowired
 	private Address address;
 	
 
@@ -13,6 +15,7 @@ public class Emp {
 	}
 
 	public void setAddress(Address address) {
+		System.out.println("Setting value");
 		this.address = address;
 	}
 
@@ -23,6 +26,7 @@ public class Emp {
 
 	public Emp(Address address) {
 		super();
+		System.out.println("setting value with constructor");
 		this.address = address;
 	}
 
