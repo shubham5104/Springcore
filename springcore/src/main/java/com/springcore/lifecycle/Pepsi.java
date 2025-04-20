@@ -5,6 +5,7 @@ import javax.annotation.PreDestroy;
 
 public class Pepsi {
 
+//	variable 
 	private int price;
 
 	public int getPrice() {
